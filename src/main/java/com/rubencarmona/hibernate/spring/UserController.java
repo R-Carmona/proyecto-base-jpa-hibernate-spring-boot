@@ -1,4 +1,4 @@
-package com.rubencarmona.spring.controller;
+package com.rubencarmona.hibernate.spring;
 
 import java.util.Random;
 
@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.rubencarmona.spring.dao.UserDao;
-import com.rubencarmona.spring.domain.User;
 
 @Controller
 public class UserController {

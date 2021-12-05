@@ -1,13 +1,12 @@
-package com.rubencarmona.spring;
+package com.rubencarmona.hibernate.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProyectoBaseJpaHibernateSpringBootApplication {
+public class PrimerEjemploSpringJpaHibernateApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProyectoBaseJpaHibernateSpringBootApplication.class, args);
+		SpringApplication.run(PrimerEjemploSpringJpaHibernateApplication.class, args);
 	}
-
 }

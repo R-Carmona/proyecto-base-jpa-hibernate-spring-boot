@@ -1,4 +1,4 @@
-package com.rubencarmona.spring.config;
+package com.rubencarmona.hibernate.spring;
 
 import java.util.Properties;
 import javax.sql.DataSource;
@@ -35,7 +35,7 @@ public class DatabaseConfig {
 
 	/**
 	 *
-	 * Declaración del EntityManagerFactory de JPA, nos permite usar dentro de la aplicación. 
+	 * Declaración del EntityManagerFactory de JPA
 	 */
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
@@ -51,7 +51,7 @@ public class DatabaseConfig {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
 
-		// Propiedades de Hiberante que añadimos al entityMagerFactory
+		// Propiedades de Hiberante
 		Properties additionalProperties = new Properties();
 		additionalProperties.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
 		additionalProperties.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
@@ -62,7 +62,7 @@ public class DatabaseConfig {
 	}
 
 	/**
-	 * Inicializa y declara el gestor de transacciones, le añadimos el entityManagerFactory.
+	 * Inicializa y declara el gestor de transacciones
 	 */
 	@Bean
 	public JpaTransactionManager transactionManager() {
@@ -82,9 +82,6 @@ public class DatabaseConfig {
 		return new PersistenceExceptionTranslationPostProcessor();
 	}
 
-	/**
-	 * Necesario para la lectura del archivo de propiedades.
-	 */
 	@Autowired
 	private Environment env;
 

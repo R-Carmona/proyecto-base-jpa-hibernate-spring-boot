@@ -1,4 +1,4 @@
-package com.rubencarmona.spring.dao;
+package com.rubencarmona.hibernate.spring;
 
 import java.util.List;
 
@@ -7,8 +7,6 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
-
-import com.rubencarmona.spring.domain.User;
 
 /**
  * 
