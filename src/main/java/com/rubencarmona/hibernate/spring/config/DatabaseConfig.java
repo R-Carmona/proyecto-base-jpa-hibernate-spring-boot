@@ -1,4 +1,4 @@
-package com.rubencarmona.hibernate.spring;
+package com.rubencarmona.hibernate.spring.config;
 
 import java.util.Properties;
 import javax.sql.DataSource;
